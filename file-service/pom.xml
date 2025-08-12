@@ -9,11 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.vdt2025</groupId>
-	<artifactId>user-service</artifactId>
+	<artifactId>file-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>user-service</name>
-	<description>User Service for Product Mangement Project</description>
-
+	<name>file-service</name>
+	<description>File Storage Service for Product Management Service</description>
 	<properties>
 		<java.version>21</java.version>
 		<spring-cloud.version>2023.0.0</spring-cloud.version>
@@ -22,6 +21,7 @@
 		<lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
 		<maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
 	</properties>
+
 	<dependencies>
 		<!-- Spring Starters -->
 		<dependency>
@@ -75,7 +75,7 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
-        <!-- Redis -->
+		<!-- Redis -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
@@ -86,11 +86,6 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>io.github.openfeign.form</groupId>
-			<artifactId>feign-form-spring</artifactId>
-			<version>3.8.0</version>
-		</dependency>
 
 		<!-- Common DTO -->
 		<dependency>
@@ -99,7 +94,7 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
-		<!-- Apache POI -->
+		<!-- Apache POI	-->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -109,13 +104,6 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.2.3</version>
-		</dependency>
-
-		<!-- Spring Kafka -->
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
-			<version>3.1.2</version>
 		</dependency>
 
 		<dependency>
